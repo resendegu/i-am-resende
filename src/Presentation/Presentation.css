@@ -1,0 +1,34 @@
+.presentation {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.presentation h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.presentation p {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.picture img {
+    width: 150px;
+    height: auto;
+    border-radius: 100%;
+}

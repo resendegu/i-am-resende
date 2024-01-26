@@ -8,17 +8,20 @@ const Header = () => {
     return (
         <div className='header'>
             <div className="header-logo">
-                <img src={meIcon} alt="Gustavo Resende" />
+                <span>R</span>
+                {/* <img src={meIcon} alt="Gustavo Resende" /> */}
             </div>
 
             <div className="header-title">
-                <h1>Gustavo Resende</h1>
+                <a href="./">
+                    <h1>Gustavo Resende</h1>
+                </a>
             </div>
 
             <div className='contact'>
                 Contact
             </div>
-        </div>
+        </div>   
     )
 }
 
