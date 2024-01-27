@@ -1,8 +1,11 @@
 import {} from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/favicon.ico'
+import './App.css'
 import Header from './Header/Header'
 import Presentation from './Presentation/Presentation'
+import About from './About/About'
+import Skills from './Skills/Skills'
+
+
 
 function App() {
 
@@ -12,7 +15,18 @@ function App() {
         <Header />
       </header>
       <main>
-        <Presentation />
+        <div className='main-grid'>
+          <div className='item'>
+            <Presentation />
+          </div>
+          <div className='item'>
+            <About />
+          </div>
+          <div className="item">
+            <Skills />
+          </div>
+        </div>
+        
       </main>
       
     </>

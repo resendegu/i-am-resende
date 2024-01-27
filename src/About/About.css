@@ -1,0 +1,31 @@
+.about {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 50px 20px;
+    align-items: center;
+    background-color:  rgb(0, 132, 255);
+}
+
+.about h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.about p {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    align-self: center;
+}
+
+.about .text {
+    text-align: justify;
+    width: 100%;
+    padding: 0px 50px 0px 50px;
+    align-self: center;
+}

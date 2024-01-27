@@ -1,5 +1,4 @@
 import {} from 'react'
-import meIcon from '../assets/favicon.ico'
 import './Header.css'
 
 const Header = () => {
