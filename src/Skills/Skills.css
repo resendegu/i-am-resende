@@ -1,13 +1,12 @@
 .skills-container {
     position: relative;
-    left: 0;
     width: 100%;
     height: fit-content;
     padding: 50px 20px;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color:  lightgray;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color:  rgb(240, 240, 240);
+    justify-items: center;
 }
 
 .skills-container .card {
@@ -66,4 +65,25 @@
     font-size: 18px;
     font-weight: 400;
     color: #000000;
+}
+
+@media screen and (max-width: 1000px) {
+    .skills-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills-container .card {
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .skills-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills-container .card {
+        height: fit-content;
+        margin-bottom: 20px;
+        width: 330px;
+    }
 }

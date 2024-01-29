@@ -6,7 +6,7 @@ body {
   color: #212121;
   background-color: white;
   word-spacing: 1px;
-  
+  position: relative;
 }
 
 /* width */

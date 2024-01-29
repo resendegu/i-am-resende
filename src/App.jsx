@@ -4,6 +4,7 @@ import Header from './Header/Header'
 import Presentation from './Presentation/Presentation'
 import About from './About/About'
 import Skills from './Skills/Skills'
+import Footer from './Footer/Footer'
 
 
 
@@ -24,6 +25,11 @@ function App() {
           </div>
           <div className="item">
             <Skills />
+          </div>
+          <div className='item'>
+            <footer>
+              <Footer />
+            </footer>
           </div>
         </div>
         
