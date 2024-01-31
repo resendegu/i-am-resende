@@ -3,19 +3,19 @@
     left: 0;
     width: 100%;
     height: fit-content;
-    padding: 30px 20px;
+    padding: 140px 20px;
     text-align: center;
 }
 
 .presentation h2 {
-    font-size: 30px;
+    font-size: 48px;
     font-weight: 400;
     color: #000000;
 }
 
 .presentation p {
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     color: #000000;
 }
@@ -30,4 +30,34 @@
     width: 150px;
     height: auto;
     border-radius: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .presentation h2 {
+        font-size: 30px;
+        font-weight: 400;
+        color: #000000;
+    }
+    
+    .presentation p {
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #000000;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .presentation h2 {
+        font-size: 24px;
+        font-weight: 400;
+        color: #000000;
+    }
+    
+    .presentation p {
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000000;
+    }
 }

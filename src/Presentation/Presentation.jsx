@@ -6,7 +6,7 @@ const Presentation = () => {
     
     return (
         <div className="presentation">
-            <h2>Programador,&nbsp;Analista de TI</h2>
+            <h2>Programador & Analista de TI</h2>
             <p>Cloud | Linux | Infra | Ansible | SysAdmin</p>
 
             <div className='picture'>

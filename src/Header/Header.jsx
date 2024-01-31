@@ -1,21 +1,25 @@
-import {} from 'react'
+import { useState } from 'react'
 import './Header.css'
 import { GitHub, Instagram, LinkedIn } from '@mui/icons-material'
 import logoR from '../assets/logo_r.jpg'
 
 const Header = () => {
-    const handlePosition = (e) => {
-        console.log(e)
-        const wasFixed = e.target.classList.toggle("header-absolute")
-        if (wasFixed) {
-            console.log('Header solto')
+    const [name, setName] = useState('Gustavo Resende')
+
+    window.onscroll = () => {
+        if (window.scrollY > 50) {
+            document.querySelector('.header').classList.add('header-scroll')
+            document.querySelector('.header-logo').classList.add('header-scroll-logo')
+            setName('resende.app')
         } else {
-            console.log('Header fixado')
+            document.querySelector('.header').classList.remove('header-scroll')
+            document.querySelector('.header-logo').classList.remove('header-scroll-logo')
+            setName('Gustavo Resende')
         }
     }
 
     return (
-        <div className='header' onClick={handlePosition}>
+        <div className='header'>
             
             <div className="header-logo" >
                 {/* <span>R</span> */}
@@ -24,7 +28,7 @@ const Header = () => {
 
             <div className="header-title">
                 <a href="./">
-                    <h1>Gustavo Resende</h1>
+                    <h1>{name}</h1>
                 </a>
             </div>
 
