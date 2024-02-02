@@ -1,41 +1,28 @@
-import {} from 'react'
-import './App.css'
-import Header from './Header/Header'
-import Presentation from './Presentation/Presentation'
-import About from './About/About'
-import Skills from './Skills/Skills'
-import Footer from './Footer/Footer'
+import { Fragment, useState } from 'react'
+import LoginDialog from './components/Login/LoginDialog'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from './components/Home/Home'
+import AuthContextProvider from './contexts/AuthContext'
 
 
 
 function App() {
 
+  const handleBackHome = () => {
+    window.location.href = '/'
+  }
+
   return (
-    <>
-      <header>
-        <Header />
-      </header>
-      <main>
-        <div className='main-grid'>
-          <div className='item'>
-            <Presentation />
-          </div>
-          <div className='item'>
-            <About />
-          </div>
-          <div className="item">
-            <Skills />
-          </div>
-          <div className='item'>
-            <footer>
-              <Footer />
-            </footer>
-          </div>
-        </div>
-        
-      </main>
-      
-    </>
+    <Fragment>
+      <AuthContextProvider>
+        <Router>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<LoginDialog open={true} setOpen={handleBackHome} />} />
+          </Routes>
+        </Router>
+      </AuthContextProvider>
+    </Fragment>
   )
 }
 

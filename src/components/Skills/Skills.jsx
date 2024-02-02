@@ -1,6 +1,6 @@
 import {  } from "react";
-import developerIcon from '../assets/developer.jpg'
-import infraIcon from '../assets/it-infra-professional.jpg'
+import developerIcon from '../../assets/developer.jpg'
+import infraIcon from '../../assets/it-infra-professional.jpg'
 import './Skills.css'
 
 const Skills = () => {

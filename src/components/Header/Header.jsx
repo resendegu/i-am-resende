@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Header.css'
 import { GitHub, Instagram, LinkedIn } from '@mui/icons-material'
-import logoR from '../assets/logo_r.jpg'
+import logoR from '../../assets/logo_r.jpg'
 
 const Header = () => {
     const [name, setName] = useState('Gustavo Resende')

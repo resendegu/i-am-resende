@@ -1,7 +1,7 @@
 import {} from 'react'
 import './Footer.css'
 import { EmailOutlined, GitHub, Instagram, LinkedIn, YouTube } from '@mui/icons-material'
-import logoR from '../assets/logo_r.jpg'
+import logoR from '../../assets/logo_r.jpg'
 
 const Footer = () => {
     

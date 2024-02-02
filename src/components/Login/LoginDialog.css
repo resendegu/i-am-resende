@@ -1,0 +1,87 @@
+.login-methods {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.login-methods h2 {
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+.login-methods-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.login-methods-buttons button {
+    margin-bottom: 10px;
+    width: 250px;
+    height: 50px;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: cyan;
+}
+
+.login-methods-buttons button:hover {
+    background-color: #03e2ff;
+}
+
+.login-methods-buttons button span {
+    float: left;
+    margin-left: 10px;
+}
+
+.logged-in-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.logged-in-user h2 {
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+.logged-in-user button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: cyan;
+    width: 250px;
+    height: 50px;
+    font-size: large;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.logged-in-user p {
+    margin-bottom: 20px;
+    font-size: large;
+}
+.logged-in-user button:hover {
+    background-color: #03e2ff;
+}
+
+.logged-in-user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
