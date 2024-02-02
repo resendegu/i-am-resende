@@ -9,7 +9,7 @@ name: Deploy to Firebase Hosting on merge
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
-    environment: production
+    environment: prod
     env:
         VITE_APP_API_KEY: ${{secrets.VITE_APP_API_KEY}}
         VITE_APP_AUTH_DOMAIN: ${{secrets.VITE_APP_AUTH_DOMAIN}}
