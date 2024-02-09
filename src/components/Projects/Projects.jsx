@@ -39,7 +39,7 @@ const Projects = () => {
                         <div className='card-img' onClick={() => handleImageClick(project.img)}>
                             <img src={project.img} alt="" />
                         </div>
-                        <span>{project.description}</span>
+                        <span><abbr title={project.description}>{project.description}</abbr></span>
                         <div className='project-links'>
                             {project.link != '' && <button onClick={() => handleProjectLink(project.link)}><i><Public /></i> Ver projeto</button>}
                             {project.link2 != '' && <button onClick={() => handleGitHubLink(project.link2)}><i><GitHub /></i> Ver no GitHub</button>}
