@@ -28,7 +28,7 @@ const Header = () => {
 
             <div className="header-title">
                 <a href="./">
-                    <h1>{name}</h1>
+                    <h1>{name} - Teste CLI</h1>
                 </a>
             </div>
 
